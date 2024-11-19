@@ -1,4 +1,4 @@
-const serverUrl = 'http://localhost:8080';
+const serverUrl = 'https://lang-manager.onrender.com';
 // const serverUrl = 'http://localhost:8083'
 
 // Funkcje zarzadzania jezykami
@@ -127,8 +127,6 @@ async function populateLanguageSelect() {
     }
 }
 
-
-
 async function uploadDocument() {
     const fileInput = document.getElementById('documentFile');
     const languageCode = document.getElementById('documentLanguage').value;
@@ -162,7 +160,6 @@ async function uploadDocument() {
         resetLanguageSelection();
     }
 }
-
 
 function resetLanguageSelection() {
     const languageSelect = document.getElementById('documentLanguage');
